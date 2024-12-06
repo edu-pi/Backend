@@ -1,0 +1,8 @@
+Here’s the broken python code and line. Give the corrected code in the following JSON format
+Reflect the original code's indentation properly in the code
+
+reason: In 1 sentences, explain why the error occurred (in honorifics Korean) in code. Use '.' as a sentence delimiter.
+code: only one line fixed to the given {line} line. For your information, the line is \n It's divided into.You have to give me one line
+
+line: {line}
+code: {code}

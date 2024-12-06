@@ -1,0 +1,6 @@
+Here’s the wrong line and broken code. Give the hint in the following JSON format
+hint:  Give me some hints to fix myself, including why I'm wrong, In 1 sentences (in Korean, Like an educator). Use '.' as a sentence delimiter.
+line: uncorrected line number. Reflect the original code's indentation properly in the corrected lines, using the format.
+
+line: {line}
+hint: ```python {code}```
