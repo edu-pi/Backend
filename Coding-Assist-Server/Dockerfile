@@ -11,6 +11,6 @@ COPY app /home/assist/app
 
 RUN poetry install --no-root
 
-EXPOSE 8001
+EXPOSE 8000
 
-ENTRYPOINT [ "poetry" ,"run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8001", "--reload"]
+ENTRYPOINT [ "poetry" ,"run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
