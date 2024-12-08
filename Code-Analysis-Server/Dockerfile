@@ -10,6 +10,6 @@ COPY app /home/visualize/app
 
 RUN poetry install --no-root
 
-EXPOSE 8000
+EXPOSE 8001
 
-ENTRYPOINT [ "poetry" ,"run", "uvicorn", "app.route:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+ENTRYPOINT [ "poetry" ,"run", "uvicorn", "app.route:app", "--host", "0.0.0.0", "--port", "8001", "--reload"]
