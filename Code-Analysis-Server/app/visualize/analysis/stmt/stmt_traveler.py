@@ -240,7 +240,7 @@ class StmtTraveler:
     def _parse_if_body(
         node: ast.stmt, conditions: list[ConditionObj], body_objs: list[BodyObj], elem_container: ElementContainer
     ):
-        if conditions[-1].result:
+        if conditions[-1].result and len(body_objs) == 0:
             # 조건절의 결과 값이 True이면 해당 body 로직 추가
             stmt_objs = StmtTraveler.travel(node.body, elem_container)
             body_objs.extend(stmt_objs)
